@@ -1,0 +1,21 @@
+@import "tailwindcss";
+:root {
+  background-color: rgb(232, 232, 232);
+}
+
+
+@layer components {
+  .btn-primary {
+    border-radius: 0.5rem;
+    background-color: var(--color-violet-500);
+    padding-inline: --spacing(5);
+    padding-block: --spacing(2);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-violet-700);
+      }
+    }
+  }
+}
