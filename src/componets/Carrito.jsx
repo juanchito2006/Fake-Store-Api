@@ -5,8 +5,13 @@ import Navbar from './Nav'
 
     const eliminar = (i) => {
       setCarcon(Carcon.filter((_,index) => index !== i )) //esto lo que hace es filtrar por posc, mostrar todas las poscisiones  menos la (i)
-      
-    }
+      if(i) {
+        Swal.fire({
+                        title: `${product.title}`,
+                          text: "Fue eliminado del carrito ",
+                        icon: "success"
+                      })
+    }}
 
       return (
    <div>
